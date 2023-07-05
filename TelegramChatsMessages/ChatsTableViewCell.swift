@@ -11,13 +11,13 @@ import UIKit
 
 class ChatsTableViewCell: UITableViewCell {
     
-    lazy var friendImageView: UIImageView = {
+    lazy var senderImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         imageView.layer.cornerRadius = 32.0
         imageView.backgroundColor = .red
-        imageView.image = UIImage(named: "Android 16")
+        //imageView.image = UIImage(named: "Android 16")
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -26,7 +26,7 @@ class ChatsTableViewCell: UITableViewCell {
        let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16, weight: UIFont.Weight.semibold)
         label.textColor = UIColor.black
-        label.text = "Arnold Schwarzenegger"
+        //label.text = "Arnold Schwarzenegger"
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -35,7 +35,7 @@ class ChatsTableViewCell: UITableViewCell {
        let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 14, weight: UIFont.Weight.regular)
         label.textColor = UIColor.gray
-        label.text = "Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength. Hasta la vista, baby!"
+        //label.text = "Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength. Hasta la vista, baby!"
         label.numberOfLines = 2
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -46,7 +46,7 @@ class ChatsTableViewCell: UITableViewCell {
         label.font = UIFont.systemFont(ofSize: 14, weight: UIFont.Weight.regular)
         label.textColor = UIColor.gray
         label.textAlignment = .right
-        label.text = "Sat"
+        //label.text = "Sat"
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -67,23 +67,23 @@ class ChatsTableViewCell: UITableViewCell {
     }
     
     func setupUI() {
-        addSubview(friendImageView)
+        addSubview(senderImageView)
         addSubview(timeStampLabel)
         addSubview(friendLabelStackView)
         
-        friendImageView.leftAnchor.constraint(equalTo: leftAnchor, constant: 20).isActive = true
-        friendImageView.topAnchor.constraint(equalTo: topAnchor, constant: 16).isActive = true
-        friendImageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16).isActive = true
-        friendImageView.heightAnchor.constraint(equalToConstant: 64).isActive = true
-        friendImageView.widthAnchor.constraint(equalToConstant: 64).isActive = true
+        senderImageView.leftAnchor.constraint(equalTo: leftAnchor, constant: 20).isActive = true
+        senderImageView.topAnchor.constraint(equalTo: topAnchor, constant: 16).isActive = true
+        senderImageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16).isActive = true
+        senderImageView.heightAnchor.constraint(equalToConstant: 64).isActive = true
+        senderImageView.widthAnchor.constraint(equalToConstant: 64).isActive = true
         
         timeStampLabel.rightAnchor.constraint(equalTo: rightAnchor,
                                              constant: -16).isActive = true
-        timeStampLabel.topAnchor.constraint(equalTo: friendImageView.topAnchor).isActive = true
+        timeStampLabel.topAnchor.constraint(equalTo: senderImageView.topAnchor).isActive = true
         
-        friendLabelStackView.leftAnchor.constraint(equalTo: friendImageView.rightAnchor, constant: 16).isActive = true
+        friendLabelStackView.leftAnchor.constraint(equalTo: senderImageView.rightAnchor, constant: 16).isActive = true
         friendLabelStackView.rightAnchor.constraint(equalTo: timeStampLabel.leftAnchor).isActive = true
-        friendLabelStackView.topAnchor.constraint(equalTo: friendImageView.topAnchor).isActive = true
+        friendLabelStackView.topAnchor.constraint(equalTo: senderImageView.topAnchor).isActive = true
     }
     
     required init?(coder: NSCoder) {
