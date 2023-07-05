@@ -9,7 +9,10 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var chatsArray: [ChatModel] = [ChatModel(senderImage: UIImage(named: "Android 16")!, senderName: "Arnold Schwarzenegger", senderLastMessage: "Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength. Hasta la vista, baby!", lastMessageTimeStamp: "Sat")]
+    var chatsArray: [ChatModel] = [ChatModel(senderImage: UIImage(named: "Android 16")!, senderName: "Arnold Schwarzenegger", senderLastMessage: "Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength. Hasta la vista, baby!", lastMessageTimeStamp: "Sat"),
+                                   ChatModel(senderImage: UIImage(named: "Broly")!, senderName: "Dwayne Johnson", senderLastMessage: "Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength. Hasta la vista, baby!", lastMessageTimeStamp: "Sat")]
+    
+    
  
     lazy var telegramTableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
@@ -62,9 +65,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let iMesaagesViewController = MessagesViewController()
+        let profileViewController = ProfileViewController()
         //present(iMesaagesViewController, animated: true)
-        navigationController?.pushViewController(iMesaagesViewController, animated: true)
+        profileViewController.chat = chatsArray[indexPath.row]
+        navigationController?.pushViewController(profileViewController, animated: true)
+        //profileViewController.profileImageView.image = chatsArray[indexPath.row].senderImage(another way of passing data to a different screen)
     
     }
 

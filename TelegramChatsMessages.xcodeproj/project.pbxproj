@@ -18,6 +18,7 @@
 		F35996002A55D19500256F6D /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35995FF2A55D19500256F6D /* MessagesViewController.swift */; };
 		F35996022A55D1D100256F6D /* MessagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35996012A55D1D100256F6D /* MessagesModel.swift */; };
 		F35996042A55D33900256F6D /* MessagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35996032A55D33900256F6D /* MessagesTableViewCell.swift */; };
+		F35996062A56056300256F6D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35996052A56056300256F6D /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		F35995FF2A55D19500256F6D /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		F35996012A55D1D100256F6D /* MessagesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesModel.swift; sourceTree = "<group>"; };
 		F35996032A55D33900256F6D /* MessagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTableViewCell.swift; sourceTree = "<group>"; };
+		F35996052A56056300256F6D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			children = (
 				F35995FE2A55D11500256F6D /* iMessagesViewController */,
 				F35995FB2A55D0A300256F6D /* ChatsViewController */,
+				F35996052A56056300256F6D /* ProfileViewController.swift */,
 				F35995E32A55972F00256F6D /* AppDelegate.swift */,
 				F35995E52A55972F00256F6D /* SceneDelegate.swift */,
 				F35995E92A55972F00256F6D /* Main.storyboard */,
@@ -175,6 +178,7 @@
 				F35995FA2A55A42900256F6D /* ChatModelStruct.swift in Sources */,
 				F35995F82A55976200256F6D /* ChatsTableViewCell.swift in Sources */,
 				F35995E42A55972F00256F6D /* AppDelegate.swift in Sources */,
+				F35996062A56056300256F6D /* ProfileViewController.swift in Sources */,
 				F35995E62A55972F00256F6D /* SceneDelegate.swift in Sources */,
 				F35996022A55D1D100256F6D /* MessagesModel.swift in Sources */,
 			);
