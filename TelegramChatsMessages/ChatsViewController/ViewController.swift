@@ -57,11 +57,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        return 88
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let iMesaagesViewController = MessagesViewController()
+        //present(iMesaagesViewController, animated: true)
+        navigationController?.pushViewController(iMesaagesViewController, animated: true)
+    
     }
 
 }

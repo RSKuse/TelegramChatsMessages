@@ -13,5 +13,4 @@ struct ChatModel {
     let senderName: String
     let senderLastMessage: String
     let lastMessageTimeStamp: String
-    
 }

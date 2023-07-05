@@ -15,6 +15,9 @@
 		F35995F02A55973000256F6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F35995EE2A55973000256F6D /* LaunchScreen.storyboard */; };
 		F35995F82A55976200256F6D /* ChatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35995F72A55976200256F6D /* ChatsTableViewCell.swift */; };
 		F35995FA2A55A42900256F6D /* ChatModelStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35995F92A55A42900256F6D /* ChatModelStruct.swift */; };
+		F35996002A55D19500256F6D /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35995FF2A55D19500256F6D /* MessagesViewController.swift */; };
+		F35996022A55D1D100256F6D /* MessagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35996012A55D1D100256F6D /* MessagesModel.swift */; };
+		F35996042A55D33900256F6D /* MessagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35996032A55D33900256F6D /* MessagesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		F35995F12A55973000256F6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F35995F72A55976200256F6D /* ChatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsTableViewCell.swift; sourceTree = "<group>"; };
 		F35995F92A55A42900256F6D /* ChatModelStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModelStruct.swift; sourceTree = "<group>"; };
+		F35995FF2A55D19500256F6D /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		F35996012A55D1D100256F6D /* MessagesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesModel.swift; sourceTree = "<group>"; };
+		F35996032A55D33900256F6D /* MessagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +66,36 @@
 		F35995E22A55972F00256F6D /* TelegramChatsMessages */ = {
 			isa = PBXGroup;
 			children = (
+				F35995FE2A55D11500256F6D /* iMessagesViewController */,
+				F35995FB2A55D0A300256F6D /* ChatsViewController */,
 				F35995E32A55972F00256F6D /* AppDelegate.swift */,
 				F35995E52A55972F00256F6D /* SceneDelegate.swift */,
-				F35995E72A55972F00256F6D /* ViewController.swift */,
-				F35995F92A55A42900256F6D /* ChatModelStruct.swift */,
-				F35995F72A55976200256F6D /* ChatsTableViewCell.swift */,
 				F35995E92A55972F00256F6D /* Main.storyboard */,
 				F35995EC2A55973000256F6D /* Assets.xcassets */,
 				F35995EE2A55973000256F6D /* LaunchScreen.storyboard */,
 				F35995F12A55973000256F6D /* Info.plist */,
 			);
 			path = TelegramChatsMessages;
+			sourceTree = "<group>";
+		};
+		F35995FB2A55D0A300256F6D /* ChatsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F35995F72A55976200256F6D /* ChatsTableViewCell.swift */,
+				F35995F92A55A42900256F6D /* ChatModelStruct.swift */,
+				F35995E72A55972F00256F6D /* ViewController.swift */,
+			);
+			path = ChatsViewController;
+			sourceTree = "<group>";
+		};
+		F35995FE2A55D11500256F6D /* iMessagesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F35995FF2A55D19500256F6D /* MessagesViewController.swift */,
+				F35996032A55D33900256F6D /* MessagesTableViewCell.swift */,
+				F35996012A55D1D100256F6D /* MessagesModel.swift */,
+			);
+			path = iMessagesViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,11 +169,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F35996002A55D19500256F6D /* MessagesViewController.swift in Sources */,
+				F35996042A55D33900256F6D /* MessagesTableViewCell.swift in Sources */,
 				F35995E82A55972F00256F6D /* ViewController.swift in Sources */,
 				F35995FA2A55A42900256F6D /* ChatModelStruct.swift in Sources */,
 				F35995F82A55976200256F6D /* ChatsTableViewCell.swift in Sources */,
 				F35995E42A55972F00256F6D /* AppDelegate.swift in Sources */,
 				F35995E62A55972F00256F6D /* SceneDelegate.swift in Sources */,
+				F35996022A55D1D100256F6D /* MessagesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

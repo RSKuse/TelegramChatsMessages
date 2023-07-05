@@ -72,18 +72,20 @@ class ChatsTableViewCell: UITableViewCell {
         addSubview(friendLabelStackView)
         
         senderImageView.leftAnchor.constraint(equalTo: leftAnchor, constant: 20).isActive = true
-        senderImageView.topAnchor.constraint(equalTo: topAnchor, constant: 16).isActive = true
-        senderImageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16).isActive = true
+        senderImageView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         senderImageView.heightAnchor.constraint(equalToConstant: 64).isActive = true
         senderImageView.widthAnchor.constraint(equalToConstant: 64).isActive = true
         
-        timeStampLabel.rightAnchor.constraint(equalTo: rightAnchor,
-                                             constant: -16).isActive = true
+        timeStampLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -16).isActive = true
         timeStampLabel.topAnchor.constraint(equalTo: senderImageView.topAnchor).isActive = true
+        //timeStampLabel.widthAnchor.constraint(equalToConstant: 100).isActive = true
         
         friendLabelStackView.leftAnchor.constraint(equalTo: senderImageView.rightAnchor, constant: 16).isActive = true
         friendLabelStackView.rightAnchor.constraint(equalTo: timeStampLabel.leftAnchor).isActive = true
-        friendLabelStackView.topAnchor.constraint(equalTo: senderImageView.topAnchor).isActive = true
+        friendLabelStackView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        //friendLabelStackView.topAnchor.constraint(equalTo: senderImageView.topAnchor).isActive = true
+        
+        
     }
     
     required init?(coder: NSCoder) {
