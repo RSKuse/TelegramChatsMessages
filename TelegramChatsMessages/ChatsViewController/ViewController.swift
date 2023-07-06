@@ -9,8 +9,8 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var chatsArray: [ChatModel] = [ChatModel(senderImage: UIImage(named: "Android 16")!, senderName: "Arnold Schwarzenegger", senderLastMessage: "Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength. Hasta la vista, baby!", lastMessageTimeStamp: "Sat"),
-                                   ChatModel(senderImage: UIImage(named: "Broly")!, senderName: "Dwayne Johnson", senderLastMessage: "Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength. Hasta la vista, baby!", lastMessageTimeStamp: "Sat")]
+    var chatsArray: [ChatModel] = [ChatModel(senderImage: UIImage(named: "Android 16")!, senderName: "Arnold Schwarzenegger", senderLastMessage: "Hasta la vista, baby!", lastMessageTimeStamp: "Sat"),
+                                   ChatModel(senderImage: UIImage(named: "Broly")!, senderName: "Dwayne Johnson", senderLastMessage: "Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength.", lastMessageTimeStamp: "Sat")]
     
     
  
