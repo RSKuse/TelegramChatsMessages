@@ -33,7 +33,7 @@ class ChatsTableViewCell: UITableViewCell {
     
     lazy var recentMessageLabel: UILabel = {
        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 14, weight: UIFont.Weight.regular)
+        label.font = UIFont.systemFont(ofSize: 14, weight: UIFont.Weight.bold)
         label.textColor = UIColor.gray
         //label.text = "Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength. Hasta la vista, baby!"
         label.numberOfLines = 2
